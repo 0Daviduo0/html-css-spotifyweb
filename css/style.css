@@ -128,4 +128,26 @@ main{
     background-color: #282828;
     z-index: 999;
     display: flex;
+    justify-content: space-between;
  }
+
+    .playing{
+        min-width: 230px;
+        max-width: 230px;
+        height: 100%;
+        border: red solid 1px;
+    }
+
+    .player-main{
+        min-width: 600px;
+        max-width: 600px;
+        height: 100%;
+        border: red solid 1px;
+    }
+
+    .volume-dev-queue{
+        min-width: 230px;
+        max-width: 230px;
+        height: 100%;
+        border: red solid 1px;
+    }
