@@ -17,28 +17,107 @@ body{
     position: fixed;
     z-index: 500;
     top: 0;
+    display: flex;
+    justify-content: end;
 }
+    
+    .upgrade-button{
+        min-width: 220px;
+        max-width: 220px;
+        height: 50px;
+        margin: 20px;
+        border: red solid 1px;
+        border-radius: 25px;
+    }
 
 /* Horizontal Nav (fixed)  */
 .sidenav{
-    width: 230px;
-    height: 100vh;
+    min-width: 230px;
+    max-width: 230px;
+    height: calc(100vh - 90px);
     background-color: rgb(0, 0, 0);
     position: fixed;
     z-index: 600;
     top: 0;
+    display: flex;
+    flex-direction: column;
 }
+
+    .spotify-logo{
+        min-height: 90px;
+        max-height: 90px;
+        width: 230px;
+        background-color: aqua;
+    }
+
+    .nav-options{
+        min-height: 115px;
+        max-height: 115px;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+        .option{
+            width: 100%;
+            height: calc(100% / 3);
+            border: red solid 1px;
+        }
+
+    .playlist-options{
+        height: 700px;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+        .playlist{
+            min-height: 15px;
+            max-height: 15px;
+            width: 100%;
+            border: red solid 1px;
+            margin-bottom: 20px;
+        }
+
+        .new-playlist{
+            min-height: 35px;
+            max-height: 35px;
+            width: 100%;
+            border: red solid 1px;
+            margin-bottom: 25px;
+        }
+
+        .playlist-title{
+            min-height: 15px;
+            max-height: 15px;
+            width: 100%;
+            border: red solid 1px;
+            margin-bottom: 25px;
+        }
+
+    .nav-footer{
+        width: 100%;
+        min-height: 75px;
+        max-height: 75px;
+        display: flex;
+        flex-direction: column;
+        border: red solid 1px;
+    }
+
 
 /* Songs, playlists and artists  */
 
-    .library{
-        width: calc(100% - 230px);
-        height: 10000px;
-        margin-top:90px;
-        margin-left: 230px;
-        margin-bottom: 90px;
-        border: #fff solid 1px;
-    }
+main{
+    width: calc(100% - 230px);
+    height: 10000px;
+    margin-top:90px;
+    margin-left: 230px;
+    margin-bottom: 90px;
+    border: #fff solid 1px;
+    display: flex;
+}
 
 /* Music controls (fixed)  */
  .player{
@@ -48,4 +127,5 @@ body{
     bottom: 0;
     background-color: #282828;
     z-index: 999;
+    display: flex;
  }
