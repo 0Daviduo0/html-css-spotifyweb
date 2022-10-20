@@ -371,6 +371,7 @@ main{
                 padding: 20px 0;
                 display: flex;
                 justify-content: center;
+                align-items: center;
             }
 
                 .progress{
@@ -383,6 +384,13 @@ main{
                     border: rgb(102, 102, 102) solid 3px;
                     width: 70%;
                     border-radius: 10px;
+                }
+
+                .circleslider{
+                    color: #fff;
+                    width: 16px;
+                    height: 15px;
+                    display: none;
                 }
 
     .volume-dev-queue{
@@ -408,5 +416,17 @@ main{
         .volume-slider{
             width: 65%;
             height: 30px;
+            padding: 0 10px;
             border: red solid 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+    .progress:hover{
+        border: #52ff2f solid 3px;
+    }
+
+    .progress:hover + .circleslider{
+        display: block;
+    }
