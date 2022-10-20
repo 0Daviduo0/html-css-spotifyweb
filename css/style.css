@@ -47,6 +47,7 @@ img{
     top: 0;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
     .spotify-logo{
@@ -140,6 +141,7 @@ img{
             }
 
         .playlist-list{
+            height: 20000px;
             overflow: scroll;
             overflow-x: hidden;
         }
