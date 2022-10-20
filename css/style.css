@@ -39,7 +39,7 @@ img{
 .sidenav{
     min-width: 230px;
     max-width: 230px;
-    height: calc(100vh - 90px);
+    height: calc(100% - 90px);
     background-color: rgb(0, 0, 0);
     position: fixed;
     z-index: 600;
@@ -68,7 +68,6 @@ img{
         width: 230px;
         display: flex;
         flex-direction: column;
-        margin-bottom: 30px;
     }
 
         .option{
@@ -94,7 +93,8 @@ img{
             }
 
     .playlist-options{
-        min-height: 535px ;
+        min-height: 95px;
+        max-height: calc(100% - 165px);
         width: 230px;
         display: flex;
         flex-direction: column;
