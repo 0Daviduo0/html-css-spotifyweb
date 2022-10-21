@@ -291,6 +291,7 @@ main{
         }
     
         .music-container{
+            padding-top: 30px;
             width: 100%;
             display: flex;
             flex-wrap: wrap;
@@ -300,18 +301,45 @@ main{
             .music-card{
                 width: calc((1500px) / 6);
                 resize: none;
-                height: 300px;
                 border: red solid 1px;
                 margin-left: 25px;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 align-items: center;
             }
 
                 .artwork{
-                    width: calc((1200px) / 6);
+                    width: calc((1300px) / 6);
                 }
+
+                .artwork-info{
+                    width: calc((1300px) / 6);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+
+                    .main-artwork-text{
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                        #art-title{
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: #fff;
+                            margin-top: 5px;
+                        }
+
+                        #art-subtitle{
+                            margin-top: 5px;
+                            font-size: 15px;
+                            color: rgba(255, 255, 255, 0.498);
+                        }
+
+                    
 
 /* Music controls (fixed)  */
  .player{
