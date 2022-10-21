@@ -226,7 +226,6 @@ img{
 
 main{
     width: calc(100% - 230px);
-    height: 10000px;
     margin-top:90px;
     margin-left: 230px;
     margin-bottom: 90px;
@@ -272,7 +271,8 @@ main{
                 }
 
     .songs-playlists{
-        margin-top: 30px;
+        margin-top: 10px;
+        margin-bottom: 30px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -553,3 +553,25 @@ main{
     .progress:hover + .circleslider{
         display: block;
     }
+
+
+@media screen and (max-width: 785px){
+
+    .music-container{
+        justify-content: center;
+    }
+
+        .music-card{
+            width: calc((1100px) / 6);
+            margin-bottom: 20px;
+        }
+
+            .artwork{
+                width: calc((1100px) / 6);
+            }
+
+                .artwork-info{
+                    width: calc((1100px) / 6);
+                }
+
+}
