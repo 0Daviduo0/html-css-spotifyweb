@@ -314,8 +314,7 @@ main{
                 }
 
     .player-main{
-        min-width: 600px;
-        max-width: 600px;
+        width: 40%;
         height: 100%;
         /* border: red solid 1px; */
         display: flex;
@@ -389,7 +388,7 @@ main{
                 .circleslider{
                     color: #fff;
                     width: 16px;
-                    height: 15px;
+                    height: 17px;
                     display: none;
                 }
 
@@ -397,7 +396,7 @@ main{
         min-width: 230px;
         max-width: 230px;
         height: 100%;
-        border: red solid 1px;
+        /* border: red solid 1px; */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -408,7 +407,7 @@ main{
         .right-side-button{
             width: 10%;
             height: 30px;
-            border: red solid 1px;
+            /* border: red solid 1px; */
             display: flex;
             align-items: center;
         }
@@ -417,7 +416,7 @@ main{
             width: 65%;
             height: 30px;
             padding: 0 10px;
-            border: red solid 1px;
+            /* border: red solid 1px; */
             display: flex;
             justify-content: center;
             align-items: center;
