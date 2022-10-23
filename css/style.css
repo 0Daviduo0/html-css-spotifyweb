@@ -66,7 +66,6 @@ img{
 
     .nav-options{
         min-height: 115px;
-        max-height: 115px;
         width: 230px;
         display: flex;
         flex-direction: column;
@@ -370,15 +369,14 @@ main{
  }
 
     .playing{
-        min-width: 230px;
+        width: 20%;
         max-width: 230px;
         height: 100%;
         /* border: red solid 1px; */
         display: flex;
         justify-content: space-between;
-        padding-left: 10px;
-        padding-top: 19px;
-        padding-bottom: 19px;
+        align-items: center;
+        margin-left: 10px;
     }
 
         .now-playing-container{
@@ -439,6 +437,7 @@ main{
 
     .player-main{
         width: 40%;
+        max-width: 750px;
         height: 100%;
         /* border: red solid 1px; */
         display: flex;
@@ -451,21 +450,25 @@ main{
             height: 50%;
             display: flex;
             justify-content: center;
-            padding-top: 8px;
+            align-items: center;
+            padding-top: 15px;
         }
 
             .up-player-button{
-                padding-top: 15px;
-                width: 40px;
-                height: 40px;
+                margin: 0 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 color:#fff;
             }
 
                 #play{
-                    padding-top: 7px;
-                    width: 60px;
-                    height: 40px;
                     font-size: 30px;
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
 
 
@@ -476,6 +479,7 @@ main{
             height: 50%;
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
             .time{
@@ -517,7 +521,7 @@ main{
                 }
 
     .volume-dev-queue{
-        min-width: 230px;
+        width: 20%;
         max-width: 230px;
         height: 100%;
         /* border: red solid 1px; */
@@ -529,7 +533,8 @@ main{
     }
 
         .right-side-button{
-            width: 10%;
+            width: 10px;
+            margin-right: 15px;
             height: 30px;
             /* border: red solid 1px; */
             display: flex;
@@ -574,4 +579,103 @@ main{
                     width: calc((1100px) / 6);
                 }
 
+}
+
+@media screen and (max-width: 735px){
+    .playing{
+        width: 30%;
+        height: 100%;
+        /* border: red solid 1px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+    }
+    
+        .like-save{
+            display: block;
+            width: 15px;
+            padding-top: 10px;
+            font-size: 12px;
+            color: #fff;
+            font-size: 15px;
+            padding-top: 5px;
+        }
+
+    .player-main{
+        width: 35%;
+    }
+        
+        .timeline-cont{
+            width: 70%;
+        }
+    
+
+    .volume-dev-queue{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 580px){
+
+    main{
+        width: calc(100% - 60px);
+        margin-left: 60px;
+    }
+
+    .sidenav{
+        min-width: 60px;
+        max-width: 60px;
+    }
+
+        .spotify-logo{
+            content: url(../img/favicon.ico);
+            max-height: 35px;
+            min-height: 35px;
+            width: 35px;
+            margin-left: 12px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            filter: invert(100);
+        }
+        .playlist-options{
+            display: none;
+        }
+
+        .nav-options{
+            height: calc(100% - 165px);
+            width: 50px;
+        }
+            .option{
+                height: 38px;
+            }
+
+            .option-name{
+                display: none;
+            }
+
+        .nav-footer{
+            margin-top: calc(100% + 90px);
+            width: 50px;
+            padding-left: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+            .download-text{
+                display: none;
+                width: auto;
+            }
+
+            .download-icon{
+                width: 22px;
+            }
+
+            .profile-name{
+                display: none;
+            }
+
+            .profile{
+                border: none;
+            }
 }
