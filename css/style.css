@@ -77,7 +77,7 @@ img{
             height: calc(100% / 3);
             /* border: red solid 1px; */
             display: flex;
-            color: #fff;
+            color: rgba(255, 255, 255, 0.533);
             font-size: 15px;
             padding-left: 20px;
             align-items: center;
@@ -86,16 +86,35 @@ img{
             #home{
             box-shadow: inset 3px 0px 0px #b9ff32;
             }
+
+                #home-txt{
+                    color: #fff;
+                }
         
             .option-icon{
                 width: 20px;
                 height: 20px;
+                filter: opacity(0.5);
             }
+
+                #home-img{
+                    filter: opacity(1);
+                }
 
             .option-name{
                 padding-left: 10px;
                 font-weight: 600;
                 padding-top: 2px;
+            }
+
+            /* Hover */
+
+            .option:hover .option-icon {
+                filter: opacity(1);
+            }
+
+            .option:hover{
+                color: #fff;
             }
 
     .playlist-options{
@@ -105,7 +124,7 @@ img{
         display: flex;
         flex-direction: column;
         padding-left: 20px;
-        color:#fff
+        color:rgba(255, 255, 255, 0.533)
     }
 
         .playlist{
@@ -116,6 +135,7 @@ img{
             margin-bottom: 10px;
             font-size: 12px;
             font-weight: bold;
+            color: #fff;
         }
 
         .new-playlist{
@@ -130,7 +150,7 @@ img{
             .create-button{
                 width: 35px;
                 height: 35px;
-                background-color: #fff;
+                background-color: rgba(255, 255, 255, 0.533);
                 text-align: center;
                 padding: 7px;
                 font-size: 18px;
@@ -160,6 +180,20 @@ img{
                 font-weight: 500;
             }
 
+            /* Hover */
+            .new-playlist:hover {
+                color: #fff;
+            }
+
+            .new-playlist:hover .create-button{
+                background-color: #fff;
+            }
+
+            .playlist-title:hover {
+                color: #fff;
+            }
+
+
     .nav-footer{
         margin-left: 8%;
         margin-right: 8%;
@@ -185,11 +219,12 @@ img{
                 width: 15px;
                 min-height: 15px;
                 max-height: 15px;
+                filter: opacity(0.5);
             }
 
             .download-text{
                 padding-left: 10px;
-                color: #fff;
+                color: rgba(255, 255, 255, 0.533);
                 font-size: 12px;
                 font-weight: 500;
             }
@@ -215,10 +250,29 @@ img{
             .profile-name{
                 padding-top: 3px;
                 padding-left: 10px;
-                color: #fff;
+                color: rgba(255, 255, 255, 0.533);
                 font-size: 16px;
                 font-weight: 700;
             }
+
+            /* Hover */
+
+            .download:hover .download-icon{
+                filter: opacity(1);
+            }
+
+            .download:hover .download-text{
+                color: #fff;
+            }
+
+            .profile:hover .profile-icon{
+                background-color: rgba(255, 255, 255, 0.568);
+            }
+            
+            .profile:hover .profile-name{
+                color: #fff;
+            }
+
 
 
 /* Songs, playlists and artists  */
